@@ -1,0 +1,73 @@
+\usepackage[top=2cm, bottom=2cm, right=1cm, left=1cm]{geometry}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz,pgf}
+\usepackage{multicol} %ecrire sur plusieurs colonnes
+\frenchbsetup{StandardLists=true} %pour avoir des points et non des traits dans les listes
+\usepackage{mathrsfs,amssymb,amsmath}
+\usepackage{enumerate}
+\usepackage[bf]{caption}
+\usepackage{stmaryrd} %crochet intervalles entiers
+\usepackage{ifthen}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%  Questions %%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcounter{NumQLigne}
+\setcounter{NumQLigne}{1}
+\newcounter{NumQColonne}
+\setcounter{NumQColonne}{1}
+\newcommand{\question}{
+\bigskip  \noindent \textbf{Question \Alph{NumQLigne}\theNumQColonne}.
+\ifnum\theNumQColonne<\n
+\stepcounter{NumQColonne} 
+\else 
+\stepcounter{NumQLigne}
+\setcounter{NumQColonne}{1}
+\fi
+}
+
+\newcounter{NumRLigne}
+\setcounter{NumRLigne}{1}
+\newcounter{NumRColonne}
+\setcounter{NumRColonne}{1}
+\newcommand{\reponse}{
+\bigskip  \noindent \textbf{Réponse \Alph{NumRLigne}\theNumRColonne}.
+\ifnum\theNumRColonne<\n
+\stepcounter{NumRColonne} 
+\else 
+\stepcounter{NumRLigne}
+\setcounter{NumRColonne}{1}
+\fi
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%  Raccourcis %%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Hi}{\mathbb{H}}
+\renewcommand{\P}{\mathbb{P}}
+\renewcommand{\phi}{\varphi}
+\newcommand{\esp}{\mathbb{E}}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\partie}{\mathcal{P}}
+\newcommand{\mat}[1]{\mathcal{M}_{#1}(\R)}
+\newcommand{\sym}[1]{\mathcal{S}_{#1}(\R)}
+\newcommand{\tra}{{}^t \!}
+\renewcommand{\epsilon}{\varepsilon}
+\newcommand{\iii}[4]{\int_{#1}^{#2} #3 \, \mathrm{d} {#4}}

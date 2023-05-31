@@ -1,0 +1,3550 @@
+\documentclass[10pt]{article}
+\input{macros.tex}
+
+
+
+\title{QR code}
+\date{}
+
+\newcommand\echelle{0.50} %A modifier pour agrandir/retrécir les grilles
+\newcommand\n{5} %A modifier pour changer le côté des grilles individuelles
+
+
+\begin{document}
+
+
+\maketitle
+
+
+\textbf{Principe :} On répond par par vrai ou par faux à une liste de $25$ questions et on colorie en conséquence en noir ou laisse en blanc les cases d'une grille de dimension $5 \times 5$. 
+
+
+On place la grille ainsi complété au centre de la grille réponse. S'il n'y a pas d'erreur on peut flasher le QR code ainsi créé.
+
+
+
+
+
+\cleardoublepage
+\section{\'Enoncés}
+\setcounter{NumQLigne}{1}
+\setcounter{NumQColonne}{1}
+\question  Un polynôme $P \in \R[x]$ de degré 3, de coefficient dominant 2 et possédant 3 racines distinctes $x_1$, $x_2$ et $x_3$, vérifie : 
+$$
+\forall x \in \R, \quad P(x) = 2x^3 - ( x_1 + x_2 + x_3) x^2 + (x_1x_2 + x_1x_3 + x_2x_3) x - x_1 x_2 x_3 .
+$$
+
+
+\nopagebreak
+\begin{center}
+ $\blacksquare$ Vrai \quad\quad\quad\quad\quad\quad $\square$ Faux
+ \end{center}
+\question  Un polynôme $P \in \R[x]$ sans racine n'est pas factorisable.
+
+
+\nopagebreak
+\begin{center}
+ $\square$ Vrai \quad\quad\quad\quad\quad\quad $\blacksquare$ Faux
+ \end{center}
+\question  $\exists x \in \R, \quad x^4 + x^3 + x^2 - 1 = x^3 + 3x^2 - 2$.
+
+
+\nopagebreak
+\begin{center}
+ $\blacksquare$ Vrai \quad\quad\quad\quad\quad\quad $\square$ Faux
+ \end{center}
+\question  $\forall x \in \R, \quad x^4 + x^3 + x^2 - 1 = x^3 + 3x^2 - 2$.
+
+
+\nopagebreak
+\begin{center}
+ $\blacksquare$ Vrai \quad\quad\quad\quad\quad\quad $\square$ Faux
+ \end{center}
+\question  On pose pour tout $ n \in \N, S_n = \ds\sum_{k=0}^n \dfrac{1}{k+1}.$ Soit $n \in \N$, la somme $S_n$ contient $n+1$ termes.
+
+
+\nopagebreak
+\begin{center}
+ $\blacksquare$ Vrai \quad\quad\quad\quad\quad\quad $\square$ Faux
+ \end{center}
+\question  On pose pour tout $ n \in \N, S_n = \ds \sum_{k=0}^n \dfrac{1}{k+1},$ on a $S_{2n} = \ds\sum_{k=0}^{n} \dfrac{1}{2k+1}.$
+
+
+\nopagebreak
+\begin{center}
+ $\square$ Vrai \quad\quad\quad\quad\quad\quad $\blacksquare$ Faux
+ \end{center}
+\question  Soit $b \in \R$. On considère le système linéaire suivant d'inconnues $x$, $y$ et $z$ :
+
+$ \left\lbrace \begin{array}{ccccccc}
+x & + &  y & + &  z &  = & 0  \\
+x & + & 2y & + & 3z &  = & 0  \\
+x & + & 3y & + & bz &  = & 0  
+\end{array} \right. $
+
+Il existe une valeur de $b$ pour laquelle le système n'a pas de solution.
+
+
+\nopagebreak
+\begin{center}
+ $\square$ Vrai \quad\quad\quad\quad\quad\quad $\blacksquare$ Faux
+ \end{center}
+\question  Soit $b \in \R$. On considère le système linéaire suivant d'inconnues $x$, $y$ et $z$ :
+
+$ \left\lbrace \begin{array}{ccccccc}
+x & + &  y & + &  z &  = & 0  \\
+x & + & 2y & + & 3z &  = & 0  \\
+x & + & 3y & + & bz &  = & 0  
+\end{array} \right. $
+
+Il existe une valeur de $b$ pour laquelle le système a exactement une solution.
+
+
+\nopagebreak
+\begin{center}
+ $\square$ Vrai \quad\quad\quad\quad\quad\quad $\blacksquare$ Faux
+ \end{center}
+\question  Soit $b \in \R$. On considère le système linéaire suivant d'inconnues $x$, $y$ et $z$ :
+
+$ \left\lbrace \begin{array}{ccccccc}
+x & + &  y & + &  z &  = & 0  \\
+x & + & 2y & + & 3z &  = & 0  \\
+x & + & 3y & + & bz &  = & 0  
+\end{array} \right. $
+
+Il existe une valeur de $b$ pour laquelle le système a strictement plus d'une solution.
+
+
+\nopagebreak
+\begin{center}
+ $\square$ Vrai \quad\quad\quad\quad\quad\quad $\blacksquare$ Faux
+ \end{center}
+\question  Lors de l'oral d'un examen, une urne contient 4 questions indiscernables au toucher. Quatre étudiants piochent successivement et sans remise une question. Antoine, l'un des étudiants, à fait l'impasse sur l'une des questions.
+
+On note $r$ le rang de passage d'Antoine et $p$ la probabilité qu'il pioche son impasse.
+
+Le nombre $p$ ne dépend pas du rang de passage $r$.
+
+
+
+\nopagebreak
+\begin{center}
+ $\square$ Vrai \quad\quad\quad\quad\quad\quad $\blacksquare$ Faux
+ \end{center}
+\question  Lors de l'oral d'un examen, une urne contient 4 questions indiscernables au toucher. Quatre étudiants piochent successivement et sans remise une question. Antoine, l'un des étudiants, à fait l'impasse sur l'une des questions.
+
+On note $r$ le rang de passage d'Antoine et $p$ la probabilité qu'il pioche son impasse.
+
+Plus $r$ est grand plus $p$ est petit (strictement).
+
+
+\nopagebreak
+\begin{center}
+ $\blacksquare$ Vrai \quad\quad\quad\quad\quad\quad $\square$ Faux
+ \end{center}
+\question  Lors de l'oral d'un examen, une urne contient 4 questions indiscernables au toucher. Quatre étudiants piochent successivement et sans remise une question. Antoine, l'un des étudiants, à fait l'impasse sur l'une des questions.
+
+On note $r$ le rang de passage d'Antoine et $p$ la probabilité qu'il pioche son impasse.
+
+Si $r=1$ alors $p = \dfrac{1}{4}$.
+
+
+\nopagebreak
+\begin{center}
+ $\blacksquare$ Vrai \quad\quad\quad\quad\quad\quad $\square$ Faux
+ \end{center}
+\question  Lors de l'oral d'un examen, une urne contient 4 questions indiscernables au toucher. Quatre étudiants piochent successivement et sans remise une question. Antoine, l'un des étudiants, à fait l'impasse sur l'une des questions.
+
+On note $r$ le rang de passage d'Antoine et $p$ la probabilité qu'il pioche son impasse.
+
+
+Si $r=3$ alors $p = \dfrac{1}{2}$.
+
+
+\nopagebreak
+\begin{center}
+ $\blacksquare$ Vrai \quad\quad\quad\quad\quad\quad $\square$ Faux
+ \end{center}
+\question  Soit $f : \R \to \R$ une fonction. $f$ est dite surjective si chaque image admet au moins un antécédent.  
+
+
+\nopagebreak
+\begin{center}
+ $\square$ Vrai \quad\quad\quad\quad\quad\quad $\blacksquare$ Faux
+ \end{center}
+\question  La fonction $g : \left\{ \begin{array}{rcl}
+\R  & \to & \R^+_* \\
+x   & \mapsto & \exp\left( 2x-1 \right)
+\end{array} \right.$ est bijective et sa fonction réciproque est 
+
+$$ \left\{ \begin{array}{rcl}
+\R^*_+  & \to & \R \\
+x   & \mapsto &  \frac{\ln(x)}{2}  +1 
+\end{array} \right.
+$$
+
+
+
+\nopagebreak
+\begin{center}
+ $\square$ Vrai \quad\quad\quad\quad\quad\quad $\blacksquare$ Faux
+ \end{center}
+\question   On a 
+
+$$
+\left(\begin{array}{rrr}
+1 & 0 & -1 \\
+ 0  & 2 & 4 \\
+ 0  & 0 & 3 \\
+ \end{array} \right)
+ \left(\begin{array}{rrr}
+ -1 & 4 & 2 \\
+ 0  & -1 & 0 \\
+ 0  & 0 & 2 \\
+ \end{array} \right) =
+ \left(\begin{array}{rrr}
+ -1 & 4 & 0 \\
+ 0  & -2 & 8 \\
+ 0  & 0 & 6 \\
+ \end{array} \right).
+$$
+
+
+\nopagebreak
+\begin{center}
+ $\blacksquare$ Vrai \quad\quad\quad\quad\quad\quad $\square$ Faux
+ \end{center}
+\question  Soient $n \in \N^*$, $A$ et $B$ deux matrices de $\mat{n}$.
+
+$$
+(A+B)^2 - (A-B)^2 = 4AB
+$$
+
+
+\nopagebreak
+\begin{center}
+ $\blacksquare$ Vrai \quad\quad\quad\quad\quad\quad $\square$ Faux
+ \end{center}
+\question  Soit $A \in \mat{3}$ telle que $A  \begin{pmatrix} 0 \\ 1 \\ 2 \end{pmatrix} = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}$ et  $A  \begin{pmatrix} 3 \\ 4 \\ 5 \end{pmatrix} = \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}$, alors on peut être certain que 
+
+$$
+A  \begin{pmatrix} 6 \\ 7 \\ 8 \end{pmatrix} = \left(\begin{array}{r} -1 \\ 2 \\ 0 \end{array} \right).
+$$
+
+
+\nopagebreak
+\begin{center}
+ $\blacksquare$ Vrai \quad\quad\quad\quad\quad\quad $\square$ Faux
+ \end{center}
+\question  On possède un jeu de 52 cartes. Le nombre de mains de 5 cartes avec au moins un valet est $\ds\binom{4}{1} \binom{51}{4}.$
+
+
+\nopagebreak
+\begin{center}
+ $\blacksquare$ Vrai \quad\quad\quad\quad\quad\quad $\square$ Faux
+ \end{center}
+\question  $\ds \lim_{x \to +\infty} \dfrac{e^{2 \ln(x)}}{x^3} = 0$.
+
+
+\nopagebreak
+\begin{center}
+ $\square$ Vrai \quad\quad\quad\quad\quad\quad $\blacksquare$ Faux
+ \end{center}
+\question  La fonction $f : [-2, 1[ \cup ]1,3] \to \R$, dont la représentation graphique est donnée ci-dessous semble continue. 
+
+
+\begin{center}
+\definecolor{qqqqff}{rgb}{0.,0.,1.}
+\definecolor{cqcqcq}{rgb}{0.7529411764705882,0.7529411764705882,0.7529411764705882}
+\begin{tikzpicture}[line cap=round,line join=round,x=1.0cm,y=1.0cm]
+\draw [color=cqcqcq,, xstep=1.0cm,ystep=1.0cm] (-2.412574139030266,-1.822748715648821) grid (3.6958420047469236,2.464524726878044);
+\draw[->,color=black] (-2.412574139030266,0.) -- (3.6958420047469236,0.);
+\foreach \x in {-2.,-1.,1.,2.,3.}
+\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\draw[->,color=black] (0.,-1.822748715648821) -- (0.,2.464524726878044);
+\foreach \y in {-1.,1.,2.}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+\clip(-2.412574139030266,-1.822748715648821) rectangle (3.6958420047469236,2.464524726878044);
+\begin{scriptsize}
+\draw[color=qqqqff] (-1.7486158625327453,-0.75) node {$\mathcal{C}_f$};
+\draw [fill=qqqqff] (-2.,-0.9092974268256817) circle (2.0pt);
+\draw [fill=qqqqff] (3.,0.5) circle (2.0pt);
+\draw[line width=1.5pt,color=qqqqff, smooth,samples=100,domain=-2:1] plot(\x,{sin(((\x)*180)/3.14)});
+\draw[-,color=qqqqff,line width=1.5pt] (1,0.84+0.2) -- (1,0.84-0.2);
+\draw[-,color=qqqqff,line width=1.5pt] (1.1,0.84+0.2) -- (1,0.84+0.2);
+\draw[-,color=qqqqff,line width=1.5pt] (1.1,0.84-0.2) -- (1,0.84-0.2);
+\draw[line width=1.5pt,color=qqqqff, smooth,samples=100,domain=1:3] plot(\x,{3/(\x*2)});
+\draw[-,color=qqqqff,line width=1.5pt] (1,1.5+0.2) -- (1,1.5-0.2);
+\draw[-,color=qqqqff,line width=1.5pt] (0.9,1.5+0.2) -- (1,1.5+0.2);
+\draw[-,color=qqqqff,line width=1.5pt] (0.9,1.5-0.2) -- (1,1.5-0.2);
+\end{scriptsize}
+\end{tikzpicture}
+\end{center}
+
+
+\nopagebreak
+\begin{center}
+ $\square$ Vrai \quad\quad\quad\quad\quad\quad $\blacksquare$ Faux
+ \end{center}
+\question  On dispose de trois urnes $U_1$, $U_2$ et $U_3$ opaques contenant des boules indiscernables au toucher. 
+
+\begin{itemize}
+\item $U_1$ en contient 2 rouges, 3 blanches et 5 vertes ;
+\item $U_2$ en contient 2 rouges, 5 blanches et aucune verte ;
+\item $U_3$ en contient 0 rouge, 3 blanches et 6 vertes.
+\end{itemize}
+
+On tire une boule dans $U_1$ que l'on place dans $U_2$, puis une dans $U_2$ que l'on place dans $U_3$ et enfin une dans $U_3$.
+
+On veut calculer la probabilité que toutes les boules piochées soient verte.
+
+On pense à priori à utiliser la formule des probabilités composées. 
+
+
+\nopagebreak
+\begin{center}
+ $\square$ Vrai \quad\quad\quad\quad\quad\quad $\blacksquare$ Faux
+ \end{center}
+\question  Soit $f : \R \to \R$ dont la courbe représentative  sur $[-4,4]$  est : 
+
+\definecolor{ffqqqq}{rgb}{1.,0.,0.}
+\definecolor{cqcqcq}{rgb}{0.7529411764705882,0.7529411764705882,0.7529411764705882}
+\begin{center}
+\begin{tikzpicture}[line cap=round,line join=round,x=1.0cm,y=1.0cm]
+\draw [color=cqcqcq,, xstep=1.0cm,ystep=1.0cm] (-4.5,-2.75) grid (4.5,2.75);
+\draw[->,color=black] (-4.5,0.) -- (4.5,0.);
+\foreach \x in {-4.,-3.,-2.,-1.,1.,2.,3.,4.}
+\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\draw[->,color=black] (0.,-2.75) -- (0.,2.75);
+\foreach \y in {-2.,-1.,1.,2.}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+\clip(-4.5,-2.75) rectangle (4.5,2.75);
+\draw[line width=1.2pt,color=ffqqqq,smooth,samples=100,domain=0:4.5] plot(\x,{(\x)^(0.6)});
+\draw[line width=1.2pt,color=ffqqqq,smooth,samples=100,domain=-4.5:0] plot(\x,{0-(-(\x))^(0.6)});
+\begin{scriptsize}
+\draw [fill=black] (-3.174001421660925,4.950488068249199) circle (2.5pt);
+\draw[color=black] (-3.0489275193580196,5.244411738661027) node {$a = 0.6$};
+\draw[color=ffqqqq] (1,2) node {\huge $\mathcal{C}_f$};
+\end{scriptsize}
+\end{tikzpicture}
+\end{center}
+
+On considère la suite $u : \left\{ \begin{array}{l}
+u_0 = \frac{1}{2},\\
+\forall n \in \N, u_{n+1} = f(u_n).\\
+\end{array} \right.$ 
+
+La suite $u$ semble converger.
+
+
+\nopagebreak
+\begin{center}
+ $\square$ Vrai \quad\quad\quad\quad\quad\quad $\blacksquare$ Faux
+ \end{center}
+\question  Soit $f$ une fonction continue définie sur $[0,1]$ telle qu'il existe $c \in [0,1]$ vérifiant $f(c) = 0.$
+
+On peut affirmer que $f(0) f(1) \leq 0$.
+
+
+\nopagebreak
+\begin{center}
+ $\blacksquare$ Vrai \quad\quad\quad\quad\quad\quad $\square$ Faux
+ \end{center}
+\question  Soit $f : [-4,4] \to \R$ une fonction bijective dont la courbe représentative est : 
+
+\definecolor{ffqqqq}{rgb}{1.,0.,0.}
+\definecolor{cqcqcq}{rgb}{0.7529411764705882,0.7529411764705882,0.7529411764705882}
+\begin{center}
+\begin{tikzpicture}[line cap=round,line join=round,x=1.0cm,y=1.0cm]
+\draw [color=cqcqcq,, xstep=1.0cm,ystep=1.0cm] (-4.5,-2.75) grid (4.5,2.75);
+\draw[->,color=black] (-4.5,0.) -- (4.5,0.);
+\foreach \x in {-4.,-3.,-2.,-1.,1.,2.,3.,4.}
+\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\draw[->,color=black] (0.,-2.75) -- (0.,2.75);
+\foreach \y in {-2.,-1.,1.,2.}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+\clip(-4.5,-2.75) rectangle (4.5,2.75);
+\draw[line width=1.2pt,color=ffqqqq,smooth,samples=100,domain=-4:4] plot(\x,{1+0.05*(\x)^(3)});
+\begin{scriptsize}
+\draw [fill=black] (-3.174001421660925,4.950488068249199) circle (2.5pt);
+\draw[color=black] (-3.0489275193580196,5.244411738661027) node {$a = 0.6$};
+\draw[color=ffqqqq] (1,2) node {\huge $\mathcal{C}_f$};
+\end{scriptsize}
+\end{tikzpicture}
+\end{center}
+
+$f^{-1}$ semble dérivable.
+
+
+\nopagebreak
+\begin{center}
+ $\square$ Vrai \quad\quad\quad\quad\quad\quad $\blacksquare$ Faux
+ \end{center}
+
+\cleardoublepage
+\cleardoublepage
+\section{Grille réponse}
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [black, fill = black] (0,24) rectangle (1,25);
+\draw [black, fill = black] (1,24) rectangle (2,25);
+\draw [black, fill = black] (2,24) rectangle (3,25);
+\draw [black, fill = black] (3,24) rectangle (4,25);
+\draw [black, fill = black] (4,24) rectangle (5,25);
+\draw [black, fill = black] (5,24) rectangle (6,25);
+\draw [black, fill = black] (6,24) rectangle (7,25);
+\draw [line width=0,black] (7,24) rectangle (8,25);
+\draw [line width=0,black] (8,24) rectangle (9,25);
+\draw [black, fill = black] (9,24) rectangle (10,25);
+\draw [line width=0,black] (10,24) rectangle (11,25);
+\draw [line width=0,black] (11,24) rectangle (12,25);
+\draw [line width=0,black] (12,24) rectangle (13,25);
+\draw [line width=0,black] (13,24) rectangle (14,25);
+\draw [line width=0,black] (14,24) rectangle (15,25);
+\draw [black, fill = black] (15,24) rectangle (16,25);
+\draw [black, fill = black] (16,24) rectangle (17,25);
+\draw [line width=0,black] (17,24) rectangle (18,25);
+\draw [black, fill = black] (18,24) rectangle (19,25);
+\draw [black, fill = black] (19,24) rectangle (20,25);
+\draw [black, fill = black] (20,24) rectangle (21,25);
+\draw [black, fill = black] (21,24) rectangle (22,25);
+\draw [black, fill = black] (22,24) rectangle (23,25);
+\draw [black, fill = black] (23,24) rectangle (24,25);
+\draw [black, fill = black] (24,24) rectangle (25,25);
+\draw [black, fill = black] (0,23) rectangle (1,24);
+\draw [line width=0,black] (1,23) rectangle (2,24);
+\draw [line width=0,black] (2,23) rectangle (3,24);
+\draw [line width=0,black] (3,23) rectangle (4,24);
+\draw [line width=0,black] (4,23) rectangle (5,24);
+\draw [line width=0,black] (5,23) rectangle (6,24);
+\draw [black, fill = black] (6,23) rectangle (7,24);
+\draw [line width=0,black] (7,23) rectangle (8,24);
+\draw [black, fill = black] (8,23) rectangle (9,24);
+\draw [black, fill = black] (9,23) rectangle (10,24);
+\draw [line width=0,black] (10,23) rectangle (11,24);
+\draw [black, fill = black] (11,23) rectangle (12,24);
+\draw [black, fill = black] (12,23) rectangle (13,24);
+\draw [black, fill = black] (13,23) rectangle (14,24);
+\draw [black, fill = black] (14,23) rectangle (15,24);
+\draw [black, fill = black] (15,23) rectangle (16,24);
+\draw [line width=0,black] (16,23) rectangle (17,24);
+\draw [line width=0,black] (17,23) rectangle (18,24);
+\draw [black, fill = black] (18,23) rectangle (19,24);
+\draw [line width=0,black] (19,23) rectangle (20,24);
+\draw [line width=0,black] (20,23) rectangle (21,24);
+\draw [line width=0,black] (21,23) rectangle (22,24);
+\draw [line width=0,black] (22,23) rectangle (23,24);
+\draw [line width=0,black] (23,23) rectangle (24,24);
+\draw [black, fill = black] (24,23) rectangle (25,24);
+\draw [black, fill = black] (0,22) rectangle (1,23);
+\draw [line width=0,black] (1,22) rectangle (2,23);
+\draw [black, fill = black] (2,22) rectangle (3,23);
+\draw [black, fill = black] (3,22) rectangle (4,23);
+\draw [black, fill = black] (4,22) rectangle (5,23);
+\draw [line width=0,black] (5,22) rectangle (6,23);
+\draw [black, fill = black] (6,22) rectangle (7,23);
+\draw [line width=0,black] (7,22) rectangle (8,23);
+\draw [line width=0,black] (8,22) rectangle (9,23);
+\draw [black, fill = black] (9,22) rectangle (10,23);
+\draw [black, fill = black] (10,22) rectangle (11,23);
+\draw [black, fill = black] (11,22) rectangle (12,23);
+\draw [line width=0,black] (12,22) rectangle (13,23);
+\draw [line width=0,black] (13,22) rectangle (14,23);
+\draw [line width=0,black] (14,22) rectangle (15,23);
+\draw [black, fill = black] (15,22) rectangle (16,23);
+\draw [line width=0,black] (16,22) rectangle (17,23);
+\draw [line width=0,black] (17,22) rectangle (18,23);
+\draw [black, fill = black] (18,22) rectangle (19,23);
+\draw [line width=0,black] (19,22) rectangle (20,23);
+\draw [black, fill = black] (20,22) rectangle (21,23);
+\draw [black, fill = black] (21,22) rectangle (22,23);
+\draw [black, fill = black] (22,22) rectangle (23,23);
+\draw [line width=0,black] (23,22) rectangle (24,23);
+\draw [black, fill = black] (24,22) rectangle (25,23);
+\draw [black, fill = black] (0,21) rectangle (1,22);
+\draw [line width=0,black] (1,21) rectangle (2,22);
+\draw [black, fill = black] (2,21) rectangle (3,22);
+\draw [black, fill = black] (3,21) rectangle (4,22);
+\draw [black, fill = black] (4,21) rectangle (5,22);
+\draw [line width=0,black] (5,21) rectangle (6,22);
+\draw [black, fill = black] (6,21) rectangle (7,22);
+\draw [line width=0,black] (7,21) rectangle (8,22);
+\draw [black, fill = black] (8,21) rectangle (9,22);
+\draw [black, fill = black] (9,21) rectangle (10,22);
+\draw [line width=0,black] (10,21) rectangle (11,22);
+\draw [black, fill = black] (11,21) rectangle (12,22);
+\draw [line width=0,black] (12,21) rectangle (13,22);
+\draw [line width=0,black] (13,21) rectangle (14,22);
+\draw [black, fill = black] (14,21) rectangle (15,22);
+\draw [line width=0,black] (15,21) rectangle (16,22);
+\draw [line width=0,black] (16,21) rectangle (17,22);
+\draw [line width=0,black] (17,21) rectangle (18,22);
+\draw [black, fill = black] (18,21) rectangle (19,22);
+\draw [line width=0,black] (19,21) rectangle (20,22);
+\draw [black, fill = black] (20,21) rectangle (21,22);
+\draw [black, fill = black] (21,21) rectangle (22,22);
+\draw [black, fill = black] (22,21) rectangle (23,22);
+\draw [line width=0,black] (23,21) rectangle (24,22);
+\draw [black, fill = black] (24,21) rectangle (25,22);
+\draw [black, fill = black] (0,20) rectangle (1,21);
+\draw [line width=0,black] (1,20) rectangle (2,21);
+\draw [black, fill = black] (2,20) rectangle (3,21);
+\draw [black, fill = black] (3,20) rectangle (4,21);
+\draw [black, fill = black] (4,20) rectangle (5,21);
+\draw [line width=0,black] (5,20) rectangle (6,21);
+\draw [black, fill = black] (6,20) rectangle (7,21);
+\draw [line width=0,black] (7,20) rectangle (8,21);
+\draw [line width=0,black] (8,20) rectangle (9,21);
+\draw [line width=0,black] (9,20) rectangle (10,21);
+\draw [black, fill = black] (10,20) rectangle (11,21);
+\draw [line width=0,black] (11,20) rectangle (12,21);
+\draw [black, fill = black] (12,20) rectangle (13,21);
+\draw [line width=0,black] (13,20) rectangle (14,21);
+\draw [black, fill = black] (14,20) rectangle (15,21);
+\draw [black, fill = black] (15,20) rectangle (16,21);
+\draw [black, fill = black] (16,20) rectangle (17,21);
+\draw [line width=0,black] (17,20) rectangle (18,21);
+\draw [black, fill = black] (18,20) rectangle (19,21);
+\draw [line width=0,black] (19,20) rectangle (20,21);
+\draw [black, fill = black] (20,20) rectangle (21,21);
+\draw [black, fill = black] (21,20) rectangle (22,21);
+\draw [black, fill = black] (22,20) rectangle (23,21);
+\draw [line width=0,black] (23,20) rectangle (24,21);
+\draw [black, fill = black] (24,20) rectangle (25,21);
+\draw [black, fill = black] (0,19) rectangle (1,20);
+\draw [line width=0,black] (1,19) rectangle (2,20);
+\draw [line width=0,black] (2,19) rectangle (3,20);
+\draw [line width=0,black] (3,19) rectangle (4,20);
+\draw [line width=0,black] (4,19) rectangle (5,20);
+\draw [line width=0,black] (5,19) rectangle (6,20);
+\draw [black, fill = black] (6,19) rectangle (7,20);
+\draw [line width=0,black] (7,19) rectangle (8,20);
+\draw [black, fill = black] (8,19) rectangle (9,20);
+\draw [line width=0,black] (9,19) rectangle (10,20);
+\draw [black, fill = black] (10,19) rectangle (11,20);
+\draw [line width=0,black] (11,19) rectangle (12,20);
+\draw [line width=0,black] (12,19) rectangle (13,20);
+\draw [black, fill = black] (13,19) rectangle (14,20);
+\draw [black, fill = black] (14,19) rectangle (15,20);
+\draw [black, fill = black] (15,19) rectangle (16,20);
+\draw [black, fill = black] (16,19) rectangle (17,20);
+\draw [line width=0,black] (17,19) rectangle (18,20);
+\draw [black, fill = black] (18,19) rectangle (19,20);
+\draw [line width=0,black] (19,19) rectangle (20,20);
+\draw [line width=0,black] (20,19) rectangle (21,20);
+\draw [line width=0,black] (21,19) rectangle (22,20);
+\draw [line width=0,black] (22,19) rectangle (23,20);
+\draw [line width=0,black] (23,19) rectangle (24,20);
+\draw [black, fill = black] (24,19) rectangle (25,20);
+\draw [black, fill = black] (0,18) rectangle (1,19);
+\draw [black, fill = black] (1,18) rectangle (2,19);
+\draw [black, fill = black] (2,18) rectangle (3,19);
+\draw [black, fill = black] (3,18) rectangle (4,19);
+\draw [black, fill = black] (4,18) rectangle (5,19);
+\draw [black, fill = black] (5,18) rectangle (6,19);
+\draw [black, fill = black] (6,18) rectangle (7,19);
+\draw [line width=0,black] (7,18) rectangle (8,19);
+\draw [black, fill = black] (8,18) rectangle (9,19);
+\draw [line width=0,black] (9,18) rectangle (10,19);
+\draw [black, fill = black] (10,18) rectangle (11,19);
+\draw [line width=0,black] (11,18) rectangle (12,19);
+\draw [black, fill = black] (12,18) rectangle (13,19);
+\draw [line width=0,black] (13,18) rectangle (14,19);
+\draw [black, fill = black] (14,18) rectangle (15,19);
+\draw [line width=0,black] (15,18) rectangle (16,19);
+\draw [black, fill = black] (16,18) rectangle (17,19);
+\draw [line width=0,black] (17,18) rectangle (18,19);
+\draw [black, fill = black] (18,18) rectangle (19,19);
+\draw [black, fill = black] (19,18) rectangle (20,19);
+\draw [black, fill = black] (20,18) rectangle (21,19);
+\draw [black, fill = black] (21,18) rectangle (22,19);
+\draw [black, fill = black] (22,18) rectangle (23,19);
+\draw [black, fill = black] (23,18) rectangle (24,19);
+\draw [black, fill = black] (24,18) rectangle (25,19);
+\draw [line width=0,black] (0,17) rectangle (1,18);
+\draw [line width=0,black] (1,17) rectangle (2,18);
+\draw [line width=0,black] (2,17) rectangle (3,18);
+\draw [line width=0,black] (3,17) rectangle (4,18);
+\draw [line width=0,black] (4,17) rectangle (5,18);
+\draw [line width=0,black] (5,17) rectangle (6,18);
+\draw [line width=0,black] (6,17) rectangle (7,18);
+\draw [line width=0,black] (7,17) rectangle (8,18);
+\draw [line width=0,black] (8,17) rectangle (9,18);
+\draw [line width=0,black] (9,17) rectangle (10,18);
+\draw [line width=0,black] (10,17) rectangle (11,18);
+\draw [line width=0,black] (11,17) rectangle (12,18);
+\draw [black, fill = black] (12,17) rectangle (13,18);
+\draw [line width=0,black] (13,17) rectangle (14,18);
+\draw [line width=0,black] (14,17) rectangle (15,18);
+\draw [line width=0,black] (15,17) rectangle (16,18);
+\draw [line width=0,black] (16,17) rectangle (17,18);
+\draw [line width=0,black] (17,17) rectangle (18,18);
+\draw [line width=0,black] (18,17) rectangle (19,18);
+\draw [line width=0,black] (19,17) rectangle (20,18);
+\draw [line width=0,black] (20,17) rectangle (21,18);
+\draw [line width=0,black] (21,17) rectangle (22,18);
+\draw [line width=0,black] (22,17) rectangle (23,18);
+\draw [line width=0,black] (23,17) rectangle (24,18);
+\draw [line width=0,black] (24,17) rectangle (25,18);
+\draw [black, fill = black] (0,16) rectangle (1,17);
+\draw [black, fill = black] (1,16) rectangle (2,17);
+\draw [black, fill = black] (2,16) rectangle (3,17);
+\draw [black, fill = black] (3,16) rectangle (4,17);
+\draw [black, fill = black] (4,16) rectangle (5,17);
+\draw [line width=0,black] (5,16) rectangle (6,17);
+\draw [black, fill = black] (6,16) rectangle (7,17);
+\draw [black, fill = black] (7,16) rectangle (8,17);
+\draw [black, fill = black] (8,16) rectangle (9,17);
+\draw [black, fill = black] (9,16) rectangle (10,17);
+\draw [black, fill = black] (10,16) rectangle (11,17);
+\draw [line width=0,black] (11,16) rectangle (12,17);
+\draw [black, fill = black] (12,16) rectangle (13,17);
+\draw [black, fill = black] (13,16) rectangle (14,17);
+\draw [line width=0,black] (14,16) rectangle (15,17);
+\draw [black, fill = black] (15,16) rectangle (16,17);
+\draw [black, fill = black] (16,16) rectangle (17,17);
+\draw [black, fill = black] (17,16) rectangle (18,17);
+\draw [line width=0,black] (18,16) rectangle (19,17);
+\draw [black, fill = black] (19,16) rectangle (20,17);
+\draw [line width=0,black] (20,16) rectangle (21,17);
+\draw [black, fill = black] (21,16) rectangle (22,17);
+\draw [line width=0,black] (22,16) rectangle (23,17);
+\draw [black, fill = black] (23,16) rectangle (24,17);
+\draw [line width=0,black] (24,16) rectangle (25,17);
+\draw [black, fill = black] (0,15) rectangle (1,16);
+\draw [black, fill = black] (1,15) rectangle (2,16);
+\draw [black, fill = black] (2,15) rectangle (3,16);
+\draw [black, fill = black] (3,15) rectangle (4,16);
+\draw [line width=0,black] (4,15) rectangle (5,16);
+\draw [line width=0,black] (5,15) rectangle (6,16);
+\draw [line width=0,black] (6,15) rectangle (7,16);
+\draw [line width=0,black] (7,15) rectangle (8,16);
+\draw [line width=0,black] (8,15) rectangle (9,16);
+\draw [black, fill = black] (9,15) rectangle (10,16);
+\draw [line width=0,black] (10,15) rectangle (11,16);
+\draw [line width=0,black] (11,15) rectangle (12,16);
+\draw [line width=0,black] (12,15) rectangle (13,16);
+\draw [line width=0,black] (13,15) rectangle (14,16);
+\draw [black, fill = black] (14,15) rectangle (15,16);
+\draw [line width=0,black] (15,15) rectangle (16,16);
+\draw [line width=0,black] (16,15) rectangle (17,16);
+\draw [line width=0,black] (17,15) rectangle (18,16);
+\draw [line width=0,black] (18,15) rectangle (19,16);
+\draw [black, fill = black] (19,15) rectangle (20,16);
+\draw [line width=0,black] (20,15) rectangle (21,16);
+\draw [line width=0,black] (21,15) rectangle (22,16);
+\draw [line width=0,black] (22,15) rectangle (23,16);
+\draw [black, fill = black] (23,15) rectangle (24,16);
+\draw [line width=0,black] (24,15) rectangle (25,16);
+\draw [black, fill = black] (0,14) rectangle (1,15);
+\draw [black, fill = black] (1,14) rectangle (2,15);
+\draw [black, fill = black] (2,14) rectangle (3,15);
+\draw [black, fill = black] (3,14) rectangle (4,15);
+\draw [black, fill = black] (4,14) rectangle (5,15);
+\draw [black, fill = black] (5,14) rectangle (6,15);
+\draw [black, fill = black] (6,14) rectangle (7,15);
+\draw [black, fill = black] (7,14) rectangle (8,15);
+\draw [black, fill = black] (8,14) rectangle (9,15);
+\draw [black, fill = black] (9,14) rectangle (10,15);
+\draw [black, fill = black] (15,14) rectangle (16,15);
+\draw [black, fill = black] (16,14) rectangle (17,15);
+\draw [line width=0,black] (17,14) rectangle (18,15);
+\draw [line width=0,black] (18,14) rectangle (19,15);
+\draw [line width=0,black] (19,14) rectangle (20,15);
+\draw [black, fill = black] (20,14) rectangle (21,15);
+\draw [black, fill = black] (21,14) rectangle (22,15);
+\draw [line width=0,black] (22,14) rectangle (23,15);
+\draw [black, fill = black] (23,14) rectangle (24,15);
+\draw [black, fill = black] (24,14) rectangle (25,15);
+\draw [black, fill = black] (0,13) rectangle (1,14);
+\draw [black, fill = black] (1,13) rectangle (2,14);
+\draw [black, fill = black] (2,13) rectangle (3,14);
+\draw [line width=0,black] (3,13) rectangle (4,14);
+\draw [line width=0,black] (4,13) rectangle (5,14);
+\draw [black, fill = black] (5,13) rectangle (6,14);
+\draw [line width=0,black] (6,13) rectangle (7,14);
+\draw [black, fill = black] (7,13) rectangle (8,14);
+\draw [line width=0,black] (8,13) rectangle (9,14);
+\draw [black, fill = black] (9,13) rectangle (10,14);
+\draw [line width=0,black] (15,13) rectangle (16,14);
+\draw [black, fill = black] (16,13) rectangle (17,14);
+\draw [black, fill = black] (17,13) rectangle (18,14);
+\draw [black, fill = black] (18,13) rectangle (19,14);
+\draw [line width=0,black] (19,13) rectangle (20,14);
+\draw [line width=0,black] (20,13) rectangle (21,14);
+\draw [line width=0,black] (21,13) rectangle (22,14);
+\draw [line width=0,black] (22,13) rectangle (23,14);
+\draw [line width=0,black] (23,13) rectangle (24,14);
+\draw [black, fill = black] (24,13) rectangle (25,14);
+\draw [black, fill = black] (0,12) rectangle (1,13);
+\draw [black, fill = black] (1,12) rectangle (2,13);
+\draw [line width=0,black] (2,12) rectangle (3,13);
+\draw [black, fill = black] (3,12) rectangle (4,13);
+\draw [black, fill = black] (4,12) rectangle (5,13);
+\draw [black, fill = black] (5,12) rectangle (6,13);
+\draw [black, fill = black] (6,12) rectangle (7,13);
+\draw [line width=0,black] (7,12) rectangle (8,13);
+\draw [black, fill = black] (8,12) rectangle (9,13);
+\draw [black, fill = black] (9,12) rectangle (10,13);
+\draw [line width=0,black] (15,12) rectangle (16,13);
+\draw [line width=0,black] (16,12) rectangle (17,13);
+\draw [black, fill = black] (17,12) rectangle (18,13);
+\draw [black, fill = black] (18,12) rectangle (19,13);
+\draw [line width=0,black] (19,12) rectangle (20,13);
+\draw [black, fill = black] (20,12) rectangle (21,13);
+\draw [line width=0,black] (21,12) rectangle (22,13);
+\draw [black, fill = black] (22,12) rectangle (23,13);
+\draw [black, fill = black] (23,12) rectangle (24,13);
+\draw [black, fill = black] (24,12) rectangle (25,13);
+\draw [black, fill = black] (0,11) rectangle (1,12);
+\draw [line width=0,black] (1,11) rectangle (2,12);
+\draw [line width=0,black] (2,11) rectangle (3,12);
+\draw [black, fill = black] (3,11) rectangle (4,12);
+\draw [line width=0,black] (4,11) rectangle (5,12);
+\draw [line width=0,black] (5,11) rectangle (6,12);
+\draw [line width=0,black] (6,11) rectangle (7,12);
+\draw [black, fill = black] (7,11) rectangle (8,12);
+\draw [black, fill = black] (8,11) rectangle (9,12);
+\draw [line width=0,black] (9,11) rectangle (10,12);
+\draw [line width=0,black] (15,11) rectangle (16,12);
+\draw [line width=0,black] (16,11) rectangle (17,12);
+\draw [black, fill = black] (17,11) rectangle (18,12);
+\draw [line width=0,black] (18,11) rectangle (19,12);
+\draw [black, fill = black] (19,11) rectangle (20,12);
+\draw [line width=0,black] (20,11) rectangle (21,12);
+\draw [black, fill = black] (21,11) rectangle (22,12);
+\draw [line width=0,black] (22,11) rectangle (23,12);
+\draw [black, fill = black] (23,11) rectangle (24,12);
+\draw [line width=0,black] (24,11) rectangle (25,12);
+\draw [black, fill = black] (0,10) rectangle (1,11);
+\draw [line width=0,black] (1,10) rectangle (2,11);
+\draw [black, fill = black] (2,10) rectangle (3,11);
+\draw [black, fill = black] (3,10) rectangle (4,11);
+\draw [line width=0,black] (4,10) rectangle (5,11);
+\draw [black, fill = black] (5,10) rectangle (6,11);
+\draw [black, fill = black] (6,10) rectangle (7,11);
+\draw [line width=0,black] (7,10) rectangle (8,11);
+\draw [line width=0,black] (8,10) rectangle (9,11);
+\draw [black, fill = black] (9,10) rectangle (10,11);
+\draw [black, fill = black] (15,10) rectangle (16,11);
+\draw [black, fill = black] (16,10) rectangle (17,11);
+\draw [black, fill = black] (17,10) rectangle (18,11);
+\draw [black, fill = black] (18,10) rectangle (19,11);
+\draw [black, fill = black] (19,10) rectangle (20,11);
+\draw [black, fill = black] (20,10) rectangle (21,11);
+\draw [black, fill = black] (21,10) rectangle (22,11);
+\draw [line width=0,black] (22,10) rectangle (23,11);
+\draw [black, fill = black] (23,10) rectangle (24,11);
+\draw [black, fill = black] (24,10) rectangle (25,11);
+\draw [black, fill = black] (0,9) rectangle (1,10);
+\draw [line width=0,black] (1,9) rectangle (2,10);
+\draw [black, fill = black] (2,9) rectangle (3,10);
+\draw [line width=0,black] (3,9) rectangle (4,10);
+\draw [black, fill = black] (4,9) rectangle (5,10);
+\draw [black, fill = black] (5,9) rectangle (6,10);
+\draw [line width=0,black] (6,9) rectangle (7,10);
+\draw [line width=0,black] (7,9) rectangle (8,10);
+\draw [black, fill = black] (8,9) rectangle (9,10);
+\draw [line width=0,black] (9,9) rectangle (10,10);
+\draw [black, fill = black] (10,9) rectangle (11,10);
+\draw [line width=0,black] (11,9) rectangle (12,10);
+\draw [black, fill = black] (12,9) rectangle (13,10);
+\draw [line width=0,black] (13,9) rectangle (14,10);
+\draw [line width=0,black] (14,9) rectangle (15,10);
+\draw [black, fill = black] (15,9) rectangle (16,10);
+\draw [line width=0,black] (16,9) rectangle (17,10);
+\draw [line width=0,black] (17,9) rectangle (18,10);
+\draw [black, fill = black] (18,9) rectangle (19,10);
+\draw [black, fill = black] (19,9) rectangle (20,10);
+\draw [black, fill = black] (20,9) rectangle (21,10);
+\draw [line width=0,black] (21,9) rectangle (22,10);
+\draw [line width=0,black] (22,9) rectangle (23,10);
+\draw [line width=0,black] (23,9) rectangle (24,10);
+\draw [black, fill = black] (24,9) rectangle (25,10);
+\draw [black, fill = black] (0,8) rectangle (1,9);
+\draw [line width=0,black] (1,8) rectangle (2,9);
+\draw [black, fill = black] (2,8) rectangle (3,9);
+\draw [black, fill = black] (3,8) rectangle (4,9);
+\draw [line width=0,black] (4,8) rectangle (5,9);
+\draw [line width=0,black] (5,8) rectangle (6,9);
+\draw [black, fill = black] (6,8) rectangle (7,9);
+\draw [black, fill = black] (7,8) rectangle (8,9);
+\draw [line width=0,black] (8,8) rectangle (9,9);
+\draw [line width=0,black] (9,8) rectangle (10,9);
+\draw [line width=0,black] (10,8) rectangle (11,9);
+\draw [line width=0,black] (11,8) rectangle (12,9);
+\draw [black, fill = black] (12,8) rectangle (13,9);
+\draw [black, fill = black] (13,8) rectangle (14,9);
+\draw [black, fill = black] (14,8) rectangle (15,9);
+\draw [line width=0,black] (15,8) rectangle (16,9);
+\draw [black, fill = black] (16,8) rectangle (17,9);
+\draw [black, fill = black] (17,8) rectangle (18,9);
+\draw [black, fill = black] (18,8) rectangle (19,9);
+\draw [black, fill = black] (19,8) rectangle (20,9);
+\draw [black, fill = black] (20,8) rectangle (21,9);
+\draw [line width=0,black] (21,8) rectangle (22,9);
+\draw [black, fill = black] (22,8) rectangle (23,9);
+\draw [line width=0,black] (23,8) rectangle (24,9);
+\draw [line width=0,black] (24,8) rectangle (25,9);
+\draw [line width=0,black] (0,7) rectangle (1,8);
+\draw [line width=0,black] (1,7) rectangle (2,8);
+\draw [line width=0,black] (2,7) rectangle (3,8);
+\draw [line width=0,black] (3,7) rectangle (4,8);
+\draw [line width=0,black] (4,7) rectangle (5,8);
+\draw [line width=0,black] (5,7) rectangle (6,8);
+\draw [line width=0,black] (6,7) rectangle (7,8);
+\draw [line width=0,black] (7,7) rectangle (8,8);
+\draw [black, fill = black] (8,7) rectangle (9,8);
+\draw [black, fill = black] (9,7) rectangle (10,8);
+\draw [black, fill = black] (10,7) rectangle (11,8);
+\draw [line width=0,black] (11,7) rectangle (12,8);
+\draw [line width=0,black] (12,7) rectangle (13,8);
+\draw [line width=0,black] (13,7) rectangle (14,8);
+\draw [black, fill = black] (14,7) rectangle (15,8);
+\draw [line width=0,black] (15,7) rectangle (16,8);
+\draw [black, fill = black] (16,7) rectangle (17,8);
+\draw [line width=0,black] (17,7) rectangle (18,8);
+\draw [line width=0,black] (18,7) rectangle (19,8);
+\draw [line width=0,black] (19,7) rectangle (20,8);
+\draw [black, fill = black] (20,7) rectangle (21,8);
+\draw [black, fill = black] (21,7) rectangle (22,8);
+\draw [line width=0,black] (22,7) rectangle (23,8);
+\draw [line width=0,black] (23,7) rectangle (24,8);
+\draw [line width=0,black] (24,7) rectangle (25,8);
+\draw [black, fill = black] (0,6) rectangle (1,7);
+\draw [black, fill = black] (1,6) rectangle (2,7);
+\draw [black, fill = black] (2,6) rectangle (3,7);
+\draw [black, fill = black] (3,6) rectangle (4,7);
+\draw [black, fill = black] (4,6) rectangle (5,7);
+\draw [black, fill = black] (5,6) rectangle (6,7);
+\draw [black, fill = black] (6,6) rectangle (7,7);
+\draw [line width=0,black] (7,6) rectangle (8,7);
+\draw [black, fill = black] (8,6) rectangle (9,7);
+\draw [line width=0,black] (9,6) rectangle (10,7);
+\draw [line width=0,black] (10,6) rectangle (11,7);
+\draw [black, fill = black] (11,6) rectangle (12,7);
+\draw [black, fill = black] (12,6) rectangle (13,7);
+\draw [line width=0,black] (13,6) rectangle (14,7);
+\draw [black, fill = black] (14,6) rectangle (15,7);
+\draw [line width=0,black] (15,6) rectangle (16,7);
+\draw [black, fill = black] (16,6) rectangle (17,7);
+\draw [line width=0,black] (17,6) rectangle (18,7);
+\draw [black, fill = black] (18,6) rectangle (19,7);
+\draw [black, fill = black] (19,6) rectangle (20,7);
+\draw [line width=0,black] (20,6) rectangle (21,7);
+\draw [black, fill = black] (21,6) rectangle (22,7);
+\draw [line width=0,black] (22,6) rectangle (23,7);
+\draw [line width=0,black] (23,6) rectangle (24,7);
+\draw [line width=0,black] (24,6) rectangle (25,7);
+\draw [black, fill = black] (0,5) rectangle (1,6);
+\draw [line width=0,black] (1,5) rectangle (2,6);
+\draw [line width=0,black] (2,5) rectangle (3,6);
+\draw [line width=0,black] (3,5) rectangle (4,6);
+\draw [line width=0,black] (4,5) rectangle (5,6);
+\draw [line width=0,black] (5,5) rectangle (6,6);
+\draw [black, fill = black] (6,5) rectangle (7,6);
+\draw [line width=0,black] (7,5) rectangle (8,6);
+\draw [line width=0,black] (8,5) rectangle (9,6);
+\draw [line width=0,black] (9,5) rectangle (10,6);
+\draw [black, fill = black] (10,5) rectangle (11,6);
+\draw [black, fill = black] (11,5) rectangle (12,6);
+\draw [line width=0,black] (12,5) rectangle (13,6);
+\draw [line width=0,black] (13,5) rectangle (14,6);
+\draw [black, fill = black] (14,5) rectangle (15,6);
+\draw [line width=0,black] (15,5) rectangle (16,6);
+\draw [black, fill = black] (16,5) rectangle (17,6);
+\draw [line width=0,black] (17,5) rectangle (18,6);
+\draw [line width=0,black] (18,5) rectangle (19,6);
+\draw [black, fill = black] (19,5) rectangle (20,6);
+\draw [line width=0,black] (20,5) rectangle (21,6);
+\draw [line width=0,black] (21,5) rectangle (22,6);
+\draw [black, fill = black] (22,5) rectangle (23,6);
+\draw [black, fill = black] (23,5) rectangle (24,6);
+\draw [black, fill = black] (24,5) rectangle (25,6);
+\draw [black, fill = black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [black, fill = black] (2,4) rectangle (3,5);
+\draw [black, fill = black] (3,4) rectangle (4,5);
+\draw [black, fill = black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (5,4) rectangle (6,5);
+\draw [black, fill = black] (6,4) rectangle (7,5);
+\draw [line width=0,black] (7,4) rectangle (8,5);
+\draw [black, fill = black] (8,4) rectangle (9,5);
+\draw [line width=0,black] (9,4) rectangle (10,5);
+\draw [line width=0,black] (10,4) rectangle (11,5);
+\draw [black, fill = black] (11,4) rectangle (12,5);
+\draw [line width=0,black] (12,4) rectangle (13,5);
+\draw [line width=0,black] (13,4) rectangle (14,5);
+\draw [line width=0,black] (14,4) rectangle (15,5);
+\draw [black, fill = black] (15,4) rectangle (16,5);
+\draw [black, fill = black] (16,4) rectangle (17,5);
+\draw [black, fill = black] (17,4) rectangle (18,5);
+\draw [black, fill = black] (18,4) rectangle (19,5);
+\draw [line width=0,black] (19,4) rectangle (20,5);
+\draw [line width=0,black] (20,4) rectangle (21,5);
+\draw [black, fill = black] (21,4) rectangle (22,5);
+\draw [line width=0,black] (22,4) rectangle (23,5);
+\draw [line width=0,black] (23,4) rectangle (24,5);
+\draw [line width=0,black] (24,4) rectangle (25,5);
+\draw [black, fill = black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [black, fill = black] (2,3) rectangle (3,4);
+\draw [black, fill = black] (3,3) rectangle (4,4);
+\draw [black, fill = black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (5,3) rectangle (6,4);
+\draw [black, fill = black] (6,3) rectangle (7,4);
+\draw [line width=0,black] (7,3) rectangle (8,4);
+\draw [black, fill = black] (8,3) rectangle (9,4);
+\draw [black, fill = black] (9,3) rectangle (10,4);
+\draw [line width=0,black] (10,3) rectangle (11,4);
+\draw [line width=0,black] (11,3) rectangle (12,4);
+\draw [black, fill = black] (12,3) rectangle (13,4);
+\draw [black, fill = black] (13,3) rectangle (14,4);
+\draw [line width=0,black] (14,3) rectangle (15,4);
+\draw [black, fill = black] (15,3) rectangle (16,4);
+\draw [line width=0,black] (16,3) rectangle (17,4);
+\draw [line width=0,black] (17,3) rectangle (18,4);
+\draw [black, fill = black] (18,3) rectangle (19,4);
+\draw [black, fill = black] (19,3) rectangle (20,4);
+\draw [line width=0,black] (20,3) rectangle (21,4);
+\draw [line width=0,black] (21,3) rectangle (22,4);
+\draw [line width=0,black] (22,3) rectangle (23,4);
+\draw [line width=0,black] (23,3) rectangle (24,4);
+\draw [line width=0,black] (24,3) rectangle (25,4);
+\draw [black, fill = black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [black, fill = black] (2,2) rectangle (3,3);
+\draw [black, fill = black] (3,2) rectangle (4,3);
+\draw [black, fill = black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (5,2) rectangle (6,3);
+\draw [black, fill = black] (6,2) rectangle (7,3);
+\draw [line width=0,black] (7,2) rectangle (8,3);
+\draw [black, fill = black] (8,2) rectangle (9,3);
+\draw [line width=0,black] (9,2) rectangle (10,3);
+\draw [line width=0,black] (10,2) rectangle (11,3);
+\draw [line width=0,black] (11,2) rectangle (12,3);
+\draw [line width=0,black] (12,2) rectangle (13,3);
+\draw [black, fill = black] (13,2) rectangle (14,3);
+\draw [black, fill = black] (14,2) rectangle (15,3);
+\draw [line width=0,black] (15,2) rectangle (16,3);
+\draw [black, fill = black] (16,2) rectangle (17,3);
+\draw [line width=0,black] (17,2) rectangle (18,3);
+\draw [line width=0,black] (18,2) rectangle (19,3);
+\draw [black, fill = black] (19,2) rectangle (20,3);
+\draw [black, fill = black] (20,2) rectangle (21,3);
+\draw [line width=0,black] (21,2) rectangle (22,3);
+\draw [line width=0,black] (22,2) rectangle (23,3);
+\draw [black, fill = black] (23,2) rectangle (24,3);
+\draw [line width=0,black] (24,2) rectangle (25,3);
+\draw [black, fill = black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (5,1) rectangle (6,2);
+\draw [black, fill = black] (6,1) rectangle (7,2);
+\draw [line width=0,black] (7,1) rectangle (8,2);
+\draw [black, fill = black] (8,1) rectangle (9,2);
+\draw [line width=0,black] (9,1) rectangle (10,2);
+\draw [black, fill = black] (10,1) rectangle (11,2);
+\draw [line width=0,black] (11,1) rectangle (12,2);
+\draw [black, fill = black] (12,1) rectangle (13,2);
+\draw [black, fill = black] (13,1) rectangle (14,2);
+\draw [line width=0,black] (14,1) rectangle (15,2);
+\draw [black, fill = black] (15,1) rectangle (16,2);
+\draw [black, fill = black] (16,1) rectangle (17,2);
+\draw [black, fill = black] (17,1) rectangle (18,2);
+\draw [line width=0,black] (18,1) rectangle (19,2);
+\draw [line width=0,black] (19,1) rectangle (20,2);
+\draw [line width=0,black] (20,1) rectangle (21,2);
+\draw [line width=0,black] (21,1) rectangle (22,2);
+\draw [black, fill = black] (22,1) rectangle (23,2);
+\draw [black, fill = black] (23,1) rectangle (24,2);
+\draw [line width=0,black] (24,1) rectangle (25,2);
+\draw [black, fill = black] (0,0) rectangle (1,1);
+\draw [black, fill = black] (1,0) rectangle (2,1);
+\draw [black, fill = black] (2,0) rectangle (3,1);
+\draw [black, fill = black] (3,0) rectangle (4,1);
+\draw [black, fill = black] (4,0) rectangle (5,1);
+\draw [black, fill = black] (5,0) rectangle (6,1);
+\draw [black, fill = black] (6,0) rectangle (7,1);
+\draw [line width=0,black] (7,0) rectangle (8,1);
+\draw [black, fill = black] (8,0) rectangle (9,1);
+\draw [black, fill = black] (9,0) rectangle (10,1);
+\draw [black, fill = black] (10,0) rectangle (11,1);
+\draw [line width=0,black] (11,0) rectangle (12,1);
+\draw [black, fill = black] (12,0) rectangle (13,1);
+\draw [line width=0,black] (13,0) rectangle (14,1);
+\draw [black, fill = black] (14,0) rectangle (15,1);
+\draw [line width=0,black] (15,0) rectangle (16,1);
+\draw [line width=0,black] (16,0) rectangle (17,1);
+\draw [line width=0,black] (17,0) rectangle (18,1);
+\draw [line width=0,black] (18,0) rectangle (19,1);
+\draw [line width=0,black] (19,0) rectangle (20,1);
+\draw [line width=0,black] (20,0) rectangle (21,1);
+\draw [line width=0,black] (21,0) rectangle (22,1);
+\draw [line width=0,black] (22,0) rectangle (23,1);
+\draw [line width=0,black] (23,0) rectangle (24,1);
+\draw [line width=0,black] (24,0) rectangle (25,1);
+\end{tikzpicture}
+\end{center}
+\cleardoublepage
+\section{Grilles vierges}
+\begin{multicols}{3}
+\setlength{\columnseprule}{0pt}
+\begin{enumerate}\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\item ~ 
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [line width=0,black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [line width=0,black] (2,4) rectangle (3,5);
+\draw [line width=0,black] (3,4) rectangle (4,5);
+\draw [line width=0,black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [line width=0,black] (2,3) rectangle (3,4);
+\draw [line width=0,black] (3,3) rectangle (4,4);
+\draw [line width=0,black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [line width=0,black] (2,2) rectangle (3,3);
+\draw [line width=0,black] (3,2) rectangle (4,3);
+\draw [line width=0,black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (0,0) rectangle (1,1);
+\draw [line width=0,black] (1,0) rectangle (2,1);
+\draw [line width=0,black] (2,0) rectangle (3,1);
+\draw [line width=0,black] (3,0) rectangle (4,1);
+\draw [line width=0,black] (4,0) rectangle (5,1);
+\draw  (-0.5,4.5) node {A  };
+\draw  (-0.5,3.5) node {B  };
+\draw  (-0.5,2.5) node {C  };
+\draw  (-0.5,1.5) node {D  };
+\draw  (-0.5,0.5) node {E  };
+\draw  (0.5,5.5) node {1  };
+\draw  (1.5,5.5) node {2  };
+\draw  (2.5,5.5) node {3  };
+\draw  (3.5,5.5) node {4  };
+\draw  (4.5,5.5) node {5  };
+\end{tikzpicture}
+\end{center}
+\end{enumerate}
+\end{multicols}\cleardoublepage
+\section{Solution}
+\begin{center}
+\begin{tikzpicture}[scale = \echelle ]
+\draw [black, fill = black] (0,24) rectangle (1,25);
+\draw [black, fill = black] (1,24) rectangle (2,25);
+\draw [black, fill = black] (2,24) rectangle (3,25);
+\draw [black, fill = black] (3,24) rectangle (4,25);
+\draw [black, fill = black] (4,24) rectangle (5,25);
+\draw [black, fill = black] (5,24) rectangle (6,25);
+\draw [black, fill = black] (6,24) rectangle (7,25);
+\draw [line width=0,black] (7,24) rectangle (8,25);
+\draw [line width=0,black] (8,24) rectangle (9,25);
+\draw [black, fill = black] (9,24) rectangle (10,25);
+\draw [line width=0,black] (10,24) rectangle (11,25);
+\draw [line width=0,black] (11,24) rectangle (12,25);
+\draw [line width=0,black] (12,24) rectangle (13,25);
+\draw [line width=0,black] (13,24) rectangle (14,25);
+\draw [line width=0,black] (14,24) rectangle (15,25);
+\draw [black, fill = black] (15,24) rectangle (16,25);
+\draw [black, fill = black] (16,24) rectangle (17,25);
+\draw [line width=0,black] (17,24) rectangle (18,25);
+\draw [black, fill = black] (18,24) rectangle (19,25);
+\draw [black, fill = black] (19,24) rectangle (20,25);
+\draw [black, fill = black] (20,24) rectangle (21,25);
+\draw [black, fill = black] (21,24) rectangle (22,25);
+\draw [black, fill = black] (22,24) rectangle (23,25);
+\draw [black, fill = black] (23,24) rectangle (24,25);
+\draw [black, fill = black] (24,24) rectangle (25,25);
+\draw [black, fill = black] (0,23) rectangle (1,24);
+\draw [line width=0,black] (1,23) rectangle (2,24);
+\draw [line width=0,black] (2,23) rectangle (3,24);
+\draw [line width=0,black] (3,23) rectangle (4,24);
+\draw [line width=0,black] (4,23) rectangle (5,24);
+\draw [line width=0,black] (5,23) rectangle (6,24);
+\draw [black, fill = black] (6,23) rectangle (7,24);
+\draw [line width=0,black] (7,23) rectangle (8,24);
+\draw [black, fill = black] (8,23) rectangle (9,24);
+\draw [black, fill = black] (9,23) rectangle (10,24);
+\draw [line width=0,black] (10,23) rectangle (11,24);
+\draw [black, fill = black] (11,23) rectangle (12,24);
+\draw [black, fill = black] (12,23) rectangle (13,24);
+\draw [black, fill = black] (13,23) rectangle (14,24);
+\draw [black, fill = black] (14,23) rectangle (15,24);
+\draw [black, fill = black] (15,23) rectangle (16,24);
+\draw [line width=0,black] (16,23) rectangle (17,24);
+\draw [line width=0,black] (17,23) rectangle (18,24);
+\draw [black, fill = black] (18,23) rectangle (19,24);
+\draw [line width=0,black] (19,23) rectangle (20,24);
+\draw [line width=0,black] (20,23) rectangle (21,24);
+\draw [line width=0,black] (21,23) rectangle (22,24);
+\draw [line width=0,black] (22,23) rectangle (23,24);
+\draw [line width=0,black] (23,23) rectangle (24,24);
+\draw [black, fill = black] (24,23) rectangle (25,24);
+\draw [black, fill = black] (0,22) rectangle (1,23);
+\draw [line width=0,black] (1,22) rectangle (2,23);
+\draw [black, fill = black] (2,22) rectangle (3,23);
+\draw [black, fill = black] (3,22) rectangle (4,23);
+\draw [black, fill = black] (4,22) rectangle (5,23);
+\draw [line width=0,black] (5,22) rectangle (6,23);
+\draw [black, fill = black] (6,22) rectangle (7,23);
+\draw [line width=0,black] (7,22) rectangle (8,23);
+\draw [line width=0,black] (8,22) rectangle (9,23);
+\draw [black, fill = black] (9,22) rectangle (10,23);
+\draw [black, fill = black] (10,22) rectangle (11,23);
+\draw [black, fill = black] (11,22) rectangle (12,23);
+\draw [line width=0,black] (12,22) rectangle (13,23);
+\draw [line width=0,black] (13,22) rectangle (14,23);
+\draw [line width=0,black] (14,22) rectangle (15,23);
+\draw [black, fill = black] (15,22) rectangle (16,23);
+\draw [line width=0,black] (16,22) rectangle (17,23);
+\draw [line width=0,black] (17,22) rectangle (18,23);
+\draw [black, fill = black] (18,22) rectangle (19,23);
+\draw [line width=0,black] (19,22) rectangle (20,23);
+\draw [black, fill = black] (20,22) rectangle (21,23);
+\draw [black, fill = black] (21,22) rectangle (22,23);
+\draw [black, fill = black] (22,22) rectangle (23,23);
+\draw [line width=0,black] (23,22) rectangle (24,23);
+\draw [black, fill = black] (24,22) rectangle (25,23);
+\draw [black, fill = black] (0,21) rectangle (1,22);
+\draw [line width=0,black] (1,21) rectangle (2,22);
+\draw [black, fill = black] (2,21) rectangle (3,22);
+\draw [black, fill = black] (3,21) rectangle (4,22);
+\draw [black, fill = black] (4,21) rectangle (5,22);
+\draw [line width=0,black] (5,21) rectangle (6,22);
+\draw [black, fill = black] (6,21) rectangle (7,22);
+\draw [line width=0,black] (7,21) rectangle (8,22);
+\draw [black, fill = black] (8,21) rectangle (9,22);
+\draw [black, fill = black] (9,21) rectangle (10,22);
+\draw [line width=0,black] (10,21) rectangle (11,22);
+\draw [black, fill = black] (11,21) rectangle (12,22);
+\draw [line width=0,black] (12,21) rectangle (13,22);
+\draw [line width=0,black] (13,21) rectangle (14,22);
+\draw [black, fill = black] (14,21) rectangle (15,22);
+\draw [line width=0,black] (15,21) rectangle (16,22);
+\draw [line width=0,black] (16,21) rectangle (17,22);
+\draw [line width=0,black] (17,21) rectangle (18,22);
+\draw [black, fill = black] (18,21) rectangle (19,22);
+\draw [line width=0,black] (19,21) rectangle (20,22);
+\draw [black, fill = black] (20,21) rectangle (21,22);
+\draw [black, fill = black] (21,21) rectangle (22,22);
+\draw [black, fill = black] (22,21) rectangle (23,22);
+\draw [line width=0,black] (23,21) rectangle (24,22);
+\draw [black, fill = black] (24,21) rectangle (25,22);
+\draw [black, fill = black] (0,20) rectangle (1,21);
+\draw [line width=0,black] (1,20) rectangle (2,21);
+\draw [black, fill = black] (2,20) rectangle (3,21);
+\draw [black, fill = black] (3,20) rectangle (4,21);
+\draw [black, fill = black] (4,20) rectangle (5,21);
+\draw [line width=0,black] (5,20) rectangle (6,21);
+\draw [black, fill = black] (6,20) rectangle (7,21);
+\draw [line width=0,black] (7,20) rectangle (8,21);
+\draw [line width=0,black] (8,20) rectangle (9,21);
+\draw [line width=0,black] (9,20) rectangle (10,21);
+\draw [black, fill = black] (10,20) rectangle (11,21);
+\draw [line width=0,black] (11,20) rectangle (12,21);
+\draw [black, fill = black] (12,20) rectangle (13,21);
+\draw [line width=0,black] (13,20) rectangle (14,21);
+\draw [black, fill = black] (14,20) rectangle (15,21);
+\draw [black, fill = black] (15,20) rectangle (16,21);
+\draw [black, fill = black] (16,20) rectangle (17,21);
+\draw [line width=0,black] (17,20) rectangle (18,21);
+\draw [black, fill = black] (18,20) rectangle (19,21);
+\draw [line width=0,black] (19,20) rectangle (20,21);
+\draw [black, fill = black] (20,20) rectangle (21,21);
+\draw [black, fill = black] (21,20) rectangle (22,21);
+\draw [black, fill = black] (22,20) rectangle (23,21);
+\draw [line width=0,black] (23,20) rectangle (24,21);
+\draw [black, fill = black] (24,20) rectangle (25,21);
+\draw [black, fill = black] (0,19) rectangle (1,20);
+\draw [line width=0,black] (1,19) rectangle (2,20);
+\draw [line width=0,black] (2,19) rectangle (3,20);
+\draw [line width=0,black] (3,19) rectangle (4,20);
+\draw [line width=0,black] (4,19) rectangle (5,20);
+\draw [line width=0,black] (5,19) rectangle (6,20);
+\draw [black, fill = black] (6,19) rectangle (7,20);
+\draw [line width=0,black] (7,19) rectangle (8,20);
+\draw [black, fill = black] (8,19) rectangle (9,20);
+\draw [line width=0,black] (9,19) rectangle (10,20);
+\draw [black, fill = black] (10,19) rectangle (11,20);
+\draw [line width=0,black] (11,19) rectangle (12,20);
+\draw [line width=0,black] (12,19) rectangle (13,20);
+\draw [black, fill = black] (13,19) rectangle (14,20);
+\draw [black, fill = black] (14,19) rectangle (15,20);
+\draw [black, fill = black] (15,19) rectangle (16,20);
+\draw [black, fill = black] (16,19) rectangle (17,20);
+\draw [line width=0,black] (17,19) rectangle (18,20);
+\draw [black, fill = black] (18,19) rectangle (19,20);
+\draw [line width=0,black] (19,19) rectangle (20,20);
+\draw [line width=0,black] (20,19) rectangle (21,20);
+\draw [line width=0,black] (21,19) rectangle (22,20);
+\draw [line width=0,black] (22,19) rectangle (23,20);
+\draw [line width=0,black] (23,19) rectangle (24,20);
+\draw [black, fill = black] (24,19) rectangle (25,20);
+\draw [black, fill = black] (0,18) rectangle (1,19);
+\draw [black, fill = black] (1,18) rectangle (2,19);
+\draw [black, fill = black] (2,18) rectangle (3,19);
+\draw [black, fill = black] (3,18) rectangle (4,19);
+\draw [black, fill = black] (4,18) rectangle (5,19);
+\draw [black, fill = black] (5,18) rectangle (6,19);
+\draw [black, fill = black] (6,18) rectangle (7,19);
+\draw [line width=0,black] (7,18) rectangle (8,19);
+\draw [black, fill = black] (8,18) rectangle (9,19);
+\draw [line width=0,black] (9,18) rectangle (10,19);
+\draw [black, fill = black] (10,18) rectangle (11,19);
+\draw [line width=0,black] (11,18) rectangle (12,19);
+\draw [black, fill = black] (12,18) rectangle (13,19);
+\draw [line width=0,black] (13,18) rectangle (14,19);
+\draw [black, fill = black] (14,18) rectangle (15,19);
+\draw [line width=0,black] (15,18) rectangle (16,19);
+\draw [black, fill = black] (16,18) rectangle (17,19);
+\draw [line width=0,black] (17,18) rectangle (18,19);
+\draw [black, fill = black] (18,18) rectangle (19,19);
+\draw [black, fill = black] (19,18) rectangle (20,19);
+\draw [black, fill = black] (20,18) rectangle (21,19);
+\draw [black, fill = black] (21,18) rectangle (22,19);
+\draw [black, fill = black] (22,18) rectangle (23,19);
+\draw [black, fill = black] (23,18) rectangle (24,19);
+\draw [black, fill = black] (24,18) rectangle (25,19);
+\draw [line width=0,black] (0,17) rectangle (1,18);
+\draw [line width=0,black] (1,17) rectangle (2,18);
+\draw [line width=0,black] (2,17) rectangle (3,18);
+\draw [line width=0,black] (3,17) rectangle (4,18);
+\draw [line width=0,black] (4,17) rectangle (5,18);
+\draw [line width=0,black] (5,17) rectangle (6,18);
+\draw [line width=0,black] (6,17) rectangle (7,18);
+\draw [line width=0,black] (7,17) rectangle (8,18);
+\draw [line width=0,black] (8,17) rectangle (9,18);
+\draw [line width=0,black] (9,17) rectangle (10,18);
+\draw [line width=0,black] (10,17) rectangle (11,18);
+\draw [line width=0,black] (11,17) rectangle (12,18);
+\draw [black, fill = black] (12,17) rectangle (13,18);
+\draw [line width=0,black] (13,17) rectangle (14,18);
+\draw [line width=0,black] (14,17) rectangle (15,18);
+\draw [line width=0,black] (15,17) rectangle (16,18);
+\draw [line width=0,black] (16,17) rectangle (17,18);
+\draw [line width=0,black] (17,17) rectangle (18,18);
+\draw [line width=0,black] (18,17) rectangle (19,18);
+\draw [line width=0,black] (19,17) rectangle (20,18);
+\draw [line width=0,black] (20,17) rectangle (21,18);
+\draw [line width=0,black] (21,17) rectangle (22,18);
+\draw [line width=0,black] (22,17) rectangle (23,18);
+\draw [line width=0,black] (23,17) rectangle (24,18);
+\draw [line width=0,black] (24,17) rectangle (25,18);
+\draw [black, fill = black] (0,16) rectangle (1,17);
+\draw [black, fill = black] (1,16) rectangle (2,17);
+\draw [black, fill = black] (2,16) rectangle (3,17);
+\draw [black, fill = black] (3,16) rectangle (4,17);
+\draw [black, fill = black] (4,16) rectangle (5,17);
+\draw [line width=0,black] (5,16) rectangle (6,17);
+\draw [black, fill = black] (6,16) rectangle (7,17);
+\draw [black, fill = black] (7,16) rectangle (8,17);
+\draw [black, fill = black] (8,16) rectangle (9,17);
+\draw [black, fill = black] (9,16) rectangle (10,17);
+\draw [black, fill = black] (10,16) rectangle (11,17);
+\draw [line width=0,black] (11,16) rectangle (12,17);
+\draw [black, fill = black] (12,16) rectangle (13,17);
+\draw [black, fill = black] (13,16) rectangle (14,17);
+\draw [line width=0,black] (14,16) rectangle (15,17);
+\draw [black, fill = black] (15,16) rectangle (16,17);
+\draw [black, fill = black] (16,16) rectangle (17,17);
+\draw [black, fill = black] (17,16) rectangle (18,17);
+\draw [line width=0,black] (18,16) rectangle (19,17);
+\draw [black, fill = black] (19,16) rectangle (20,17);
+\draw [line width=0,black] (20,16) rectangle (21,17);
+\draw [black, fill = black] (21,16) rectangle (22,17);
+\draw [line width=0,black] (22,16) rectangle (23,17);
+\draw [black, fill = black] (23,16) rectangle (24,17);
+\draw [line width=0,black] (24,16) rectangle (25,17);
+\draw [black, fill = black] (0,15) rectangle (1,16);
+\draw [black, fill = black] (1,15) rectangle (2,16);
+\draw [black, fill = black] (2,15) rectangle (3,16);
+\draw [black, fill = black] (3,15) rectangle (4,16);
+\draw [line width=0,black] (4,15) rectangle (5,16);
+\draw [line width=0,black] (5,15) rectangle (6,16);
+\draw [line width=0,black] (6,15) rectangle (7,16);
+\draw [line width=0,black] (7,15) rectangle (8,16);
+\draw [line width=0,black] (8,15) rectangle (9,16);
+\draw [black, fill = black] (9,15) rectangle (10,16);
+\draw [line width=0,black] (10,15) rectangle (11,16);
+\draw [line width=0,black] (11,15) rectangle (12,16);
+\draw [line width=0,black] (12,15) rectangle (13,16);
+\draw [line width=0,black] (13,15) rectangle (14,16);
+\draw [black, fill = black] (14,15) rectangle (15,16);
+\draw [line width=0,black] (15,15) rectangle (16,16);
+\draw [line width=0,black] (16,15) rectangle (17,16);
+\draw [line width=0,black] (17,15) rectangle (18,16);
+\draw [line width=0,black] (18,15) rectangle (19,16);
+\draw [black, fill = black] (19,15) rectangle (20,16);
+\draw [line width=0,black] (20,15) rectangle (21,16);
+\draw [line width=0,black] (21,15) rectangle (22,16);
+\draw [line width=0,black] (22,15) rectangle (23,16);
+\draw [black, fill = black] (23,15) rectangle (24,16);
+\draw [line width=0,black] (24,15) rectangle (25,16);
+\draw [black, fill = black] (0,14) rectangle (1,15);
+\draw [black, fill = black] (1,14) rectangle (2,15);
+\draw [black, fill = black] (2,14) rectangle (3,15);
+\draw [black, fill = black] (3,14) rectangle (4,15);
+\draw [black, fill = black] (4,14) rectangle (5,15);
+\draw [black, fill = black] (5,14) rectangle (6,15);
+\draw [black, fill = black] (6,14) rectangle (7,15);
+\draw [black, fill = black] (7,14) rectangle (8,15);
+\draw [black, fill = black] (8,14) rectangle (9,15);
+\draw [black, fill = black] (9,14) rectangle (10,15);
+\draw [line width=0,black] (10,14) rectangle (11,15);
+\draw [black, fill = black] (11,14) rectangle (12,15);
+\draw [black, fill = black] (12,14) rectangle (13,15);
+\draw [line width=0,black] (13,14) rectangle (14,15);
+\draw [black, fill = black] (14,14) rectangle (15,15);
+\draw [black, fill = black] (15,14) rectangle (16,15);
+\draw [black, fill = black] (16,14) rectangle (17,15);
+\draw [line width=0,black] (17,14) rectangle (18,15);
+\draw [line width=0,black] (18,14) rectangle (19,15);
+\draw [line width=0,black] (19,14) rectangle (20,15);
+\draw [black, fill = black] (20,14) rectangle (21,15);
+\draw [black, fill = black] (21,14) rectangle (22,15);
+\draw [line width=0,black] (22,14) rectangle (23,15);
+\draw [black, fill = black] (23,14) rectangle (24,15);
+\draw [black, fill = black] (24,14) rectangle (25,15);
+\draw [black, fill = black] (0,13) rectangle (1,14);
+\draw [black, fill = black] (1,13) rectangle (2,14);
+\draw [black, fill = black] (2,13) rectangle (3,14);
+\draw [line width=0,black] (3,13) rectangle (4,14);
+\draw [line width=0,black] (4,13) rectangle (5,14);
+\draw [black, fill = black] (5,13) rectangle (6,14);
+\draw [line width=0,black] (6,13) rectangle (7,14);
+\draw [black, fill = black] (7,13) rectangle (8,14);
+\draw [line width=0,black] (8,13) rectangle (9,14);
+\draw [black, fill = black] (9,13) rectangle (10,14);
+\draw [black, fill = black] (10,13) rectangle (11,14);
+\draw [black, fill = black] (11,13) rectangle (12,14);
+\draw [line width=0,black] (12,13) rectangle (13,14);
+\draw [line width=0,black] (13,13) rectangle (14,14);
+\draw [line width=0,black] (14,13) rectangle (15,14);
+\draw [line width=0,black] (15,13) rectangle (16,14);
+\draw [black, fill = black] (16,13) rectangle (17,14);
+\draw [black, fill = black] (17,13) rectangle (18,14);
+\draw [black, fill = black] (18,13) rectangle (19,14);
+\draw [line width=0,black] (19,13) rectangle (20,14);
+\draw [line width=0,black] (20,13) rectangle (21,14);
+\draw [line width=0,black] (21,13) rectangle (22,14);
+\draw [line width=0,black] (22,13) rectangle (23,14);
+\draw [line width=0,black] (23,13) rectangle (24,14);
+\draw [black, fill = black] (24,13) rectangle (25,14);
+\draw [black, fill = black] (0,12) rectangle (1,13);
+\draw [black, fill = black] (1,12) rectangle (2,13);
+\draw [line width=0,black] (2,12) rectangle (3,13);
+\draw [black, fill = black] (3,12) rectangle (4,13);
+\draw [black, fill = black] (4,12) rectangle (5,13);
+\draw [black, fill = black] (5,12) rectangle (6,13);
+\draw [black, fill = black] (6,12) rectangle (7,13);
+\draw [line width=0,black] (7,12) rectangle (8,13);
+\draw [black, fill = black] (8,12) rectangle (9,13);
+\draw [black, fill = black] (9,12) rectangle (10,13);
+\draw [line width=0,black] (10,12) rectangle (11,13);
+\draw [black, fill = black] (11,12) rectangle (12,13);
+\draw [line width=0,black] (12,12) rectangle (13,13);
+\draw [black, fill = black] (13,12) rectangle (14,13);
+\draw [black, fill = black] (14,12) rectangle (15,13);
+\draw [line width=0,black] (15,12) rectangle (16,13);
+\draw [line width=0,black] (16,12) rectangle (17,13);
+\draw [black, fill = black] (17,12) rectangle (18,13);
+\draw [black, fill = black] (18,12) rectangle (19,13);
+\draw [line width=0,black] (19,12) rectangle (20,13);
+\draw [black, fill = black] (20,12) rectangle (21,13);
+\draw [line width=0,black] (21,12) rectangle (22,13);
+\draw [black, fill = black] (22,12) rectangle (23,13);
+\draw [black, fill = black] (23,12) rectangle (24,13);
+\draw [black, fill = black] (24,12) rectangle (25,13);
+\draw [black, fill = black] (0,11) rectangle (1,12);
+\draw [line width=0,black] (1,11) rectangle (2,12);
+\draw [line width=0,black] (2,11) rectangle (3,12);
+\draw [black, fill = black] (3,11) rectangle (4,12);
+\draw [line width=0,black] (4,11) rectangle (5,12);
+\draw [line width=0,black] (5,11) rectangle (6,12);
+\draw [line width=0,black] (6,11) rectangle (7,12);
+\draw [black, fill = black] (7,11) rectangle (8,12);
+\draw [black, fill = black] (8,11) rectangle (9,12);
+\draw [line width=0,black] (9,11) rectangle (10,12);
+\draw [black, fill = black] (10,11) rectangle (11,12);
+\draw [line width=0,black] (11,11) rectangle (12,12);
+\draw [black, fill = black] (12,11) rectangle (13,12);
+\draw [line width=0,black] (13,11) rectangle (14,12);
+\draw [line width=0,black] (14,11) rectangle (15,12);
+\draw [line width=0,black] (15,11) rectangle (16,12);
+\draw [line width=0,black] (16,11) rectangle (17,12);
+\draw [black, fill = black] (17,11) rectangle (18,12);
+\draw [line width=0,black] (18,11) rectangle (19,12);
+\draw [black, fill = black] (19,11) rectangle (20,12);
+\draw [line width=0,black] (20,11) rectangle (21,12);
+\draw [black, fill = black] (21,11) rectangle (22,12);
+\draw [line width=0,black] (22,11) rectangle (23,12);
+\draw [black, fill = black] (23,11) rectangle (24,12);
+\draw [line width=0,black] (24,11) rectangle (25,12);
+\draw [black, fill = black] (0,10) rectangle (1,11);
+\draw [line width=0,black] (1,10) rectangle (2,11);
+\draw [black, fill = black] (2,10) rectangle (3,11);
+\draw [black, fill = black] (3,10) rectangle (4,11);
+\draw [line width=0,black] (4,10) rectangle (5,11);
+\draw [black, fill = black] (5,10) rectangle (6,11);
+\draw [black, fill = black] (6,10) rectangle (7,11);
+\draw [line width=0,black] (7,10) rectangle (8,11);
+\draw [line width=0,black] (8,10) rectangle (9,11);
+\draw [black, fill = black] (9,10) rectangle (10,11);
+\draw [line width=0,black] (10,10) rectangle (11,11);
+\draw [line width=0,black] (11,10) rectangle (12,11);
+\draw [line width=0,black] (12,10) rectangle (13,11);
+\draw [line width=0,black] (13,10) rectangle (14,11);
+\draw [black, fill = black] (14,10) rectangle (15,11);
+\draw [black, fill = black] (15,10) rectangle (16,11);
+\draw [black, fill = black] (16,10) rectangle (17,11);
+\draw [black, fill = black] (17,10) rectangle (18,11);
+\draw [black, fill = black] (18,10) rectangle (19,11);
+\draw [black, fill = black] (19,10) rectangle (20,11);
+\draw [black, fill = black] (20,10) rectangle (21,11);
+\draw [black, fill = black] (21,10) rectangle (22,11);
+\draw [line width=0,black] (22,10) rectangle (23,11);
+\draw [black, fill = black] (23,10) rectangle (24,11);
+\draw [black, fill = black] (24,10) rectangle (25,11);
+\draw [black, fill = black] (0,9) rectangle (1,10);
+\draw [line width=0,black] (1,9) rectangle (2,10);
+\draw [black, fill = black] (2,9) rectangle (3,10);
+\draw [line width=0,black] (3,9) rectangle (4,10);
+\draw [black, fill = black] (4,9) rectangle (5,10);
+\draw [black, fill = black] (5,9) rectangle (6,10);
+\draw [line width=0,black] (6,9) rectangle (7,10);
+\draw [line width=0,black] (7,9) rectangle (8,10);
+\draw [black, fill = black] (8,9) rectangle (9,10);
+\draw [line width=0,black] (9,9) rectangle (10,10);
+\draw [black, fill = black] (10,9) rectangle (11,10);
+\draw [line width=0,black] (11,9) rectangle (12,10);
+\draw [black, fill = black] (12,9) rectangle (13,10);
+\draw [line width=0,black] (13,9) rectangle (14,10);
+\draw [line width=0,black] (14,9) rectangle (15,10);
+\draw [black, fill = black] (15,9) rectangle (16,10);
+\draw [line width=0,black] (16,9) rectangle (17,10);
+\draw [line width=0,black] (17,9) rectangle (18,10);
+\draw [black, fill = black] (18,9) rectangle (19,10);
+\draw [black, fill = black] (19,9) rectangle (20,10);
+\draw [black, fill = black] (20,9) rectangle (21,10);
+\draw [line width=0,black] (21,9) rectangle (22,10);
+\draw [line width=0,black] (22,9) rectangle (23,10);
+\draw [line width=0,black] (23,9) rectangle (24,10);
+\draw [black, fill = black] (24,9) rectangle (25,10);
+\draw [black, fill = black] (0,8) rectangle (1,9);
+\draw [line width=0,black] (1,8) rectangle (2,9);
+\draw [black, fill = black] (2,8) rectangle (3,9);
+\draw [black, fill = black] (3,8) rectangle (4,9);
+\draw [line width=0,black] (4,8) rectangle (5,9);
+\draw [line width=0,black] (5,8) rectangle (6,9);
+\draw [black, fill = black] (6,8) rectangle (7,9);
+\draw [black, fill = black] (7,8) rectangle (8,9);
+\draw [line width=0,black] (8,8) rectangle (9,9);
+\draw [line width=0,black] (9,8) rectangle (10,9);
+\draw [line width=0,black] (10,8) rectangle (11,9);
+\draw [line width=0,black] (11,8) rectangle (12,9);
+\draw [black, fill = black] (12,8) rectangle (13,9);
+\draw [black, fill = black] (13,8) rectangle (14,9);
+\draw [black, fill = black] (14,8) rectangle (15,9);
+\draw [line width=0,black] (15,8) rectangle (16,9);
+\draw [black, fill = black] (16,8) rectangle (17,9);
+\draw [black, fill = black] (17,8) rectangle (18,9);
+\draw [black, fill = black] (18,8) rectangle (19,9);
+\draw [black, fill = black] (19,8) rectangle (20,9);
+\draw [black, fill = black] (20,8) rectangle (21,9);
+\draw [line width=0,black] (21,8) rectangle (22,9);
+\draw [black, fill = black] (22,8) rectangle (23,9);
+\draw [line width=0,black] (23,8) rectangle (24,9);
+\draw [line width=0,black] (24,8) rectangle (25,9);
+\draw [line width=0,black] (0,7) rectangle (1,8);
+\draw [line width=0,black] (1,7) rectangle (2,8);
+\draw [line width=0,black] (2,7) rectangle (3,8);
+\draw [line width=0,black] (3,7) rectangle (4,8);
+\draw [line width=0,black] (4,7) rectangle (5,8);
+\draw [line width=0,black] (5,7) rectangle (6,8);
+\draw [line width=0,black] (6,7) rectangle (7,8);
+\draw [line width=0,black] (7,7) rectangle (8,8);
+\draw [black, fill = black] (8,7) rectangle (9,8);
+\draw [black, fill = black] (9,7) rectangle (10,8);
+\draw [black, fill = black] (10,7) rectangle (11,8);
+\draw [line width=0,black] (11,7) rectangle (12,8);
+\draw [line width=0,black] (12,7) rectangle (13,8);
+\draw [line width=0,black] (13,7) rectangle (14,8);
+\draw [black, fill = black] (14,7) rectangle (15,8);
+\draw [line width=0,black] (15,7) rectangle (16,8);
+\draw [black, fill = black] (16,7) rectangle (17,8);
+\draw [line width=0,black] (17,7) rectangle (18,8);
+\draw [line width=0,black] (18,7) rectangle (19,8);
+\draw [line width=0,black] (19,7) rectangle (20,8);
+\draw [black, fill = black] (20,7) rectangle (21,8);
+\draw [black, fill = black] (21,7) rectangle (22,8);
+\draw [line width=0,black] (22,7) rectangle (23,8);
+\draw [line width=0,black] (23,7) rectangle (24,8);
+\draw [line width=0,black] (24,7) rectangle (25,8);
+\draw [black, fill = black] (0,6) rectangle (1,7);
+\draw [black, fill = black] (1,6) rectangle (2,7);
+\draw [black, fill = black] (2,6) rectangle (3,7);
+\draw [black, fill = black] (3,6) rectangle (4,7);
+\draw [black, fill = black] (4,6) rectangle (5,7);
+\draw [black, fill = black] (5,6) rectangle (6,7);
+\draw [black, fill = black] (6,6) rectangle (7,7);
+\draw [line width=0,black] (7,6) rectangle (8,7);
+\draw [black, fill = black] (8,6) rectangle (9,7);
+\draw [line width=0,black] (9,6) rectangle (10,7);
+\draw [line width=0,black] (10,6) rectangle (11,7);
+\draw [black, fill = black] (11,6) rectangle (12,7);
+\draw [black, fill = black] (12,6) rectangle (13,7);
+\draw [line width=0,black] (13,6) rectangle (14,7);
+\draw [black, fill = black] (14,6) rectangle (15,7);
+\draw [line width=0,black] (15,6) rectangle (16,7);
+\draw [black, fill = black] (16,6) rectangle (17,7);
+\draw [line width=0,black] (17,6) rectangle (18,7);
+\draw [black, fill = black] (18,6) rectangle (19,7);
+\draw [black, fill = black] (19,6) rectangle (20,7);
+\draw [line width=0,black] (20,6) rectangle (21,7);
+\draw [black, fill = black] (21,6) rectangle (22,7);
+\draw [line width=0,black] (22,6) rectangle (23,7);
+\draw [line width=0,black] (23,6) rectangle (24,7);
+\draw [line width=0,black] (24,6) rectangle (25,7);
+\draw [black, fill = black] (0,5) rectangle (1,6);
+\draw [line width=0,black] (1,5) rectangle (2,6);
+\draw [line width=0,black] (2,5) rectangle (3,6);
+\draw [line width=0,black] (3,5) rectangle (4,6);
+\draw [line width=0,black] (4,5) rectangle (5,6);
+\draw [line width=0,black] (5,5) rectangle (6,6);
+\draw [black, fill = black] (6,5) rectangle (7,6);
+\draw [line width=0,black] (7,5) rectangle (8,6);
+\draw [line width=0,black] (8,5) rectangle (9,6);
+\draw [line width=0,black] (9,5) rectangle (10,6);
+\draw [black, fill = black] (10,5) rectangle (11,6);
+\draw [black, fill = black] (11,5) rectangle (12,6);
+\draw [line width=0,black] (12,5) rectangle (13,6);
+\draw [line width=0,black] (13,5) rectangle (14,6);
+\draw [black, fill = black] (14,5) rectangle (15,6);
+\draw [line width=0,black] (15,5) rectangle (16,6);
+\draw [black, fill = black] (16,5) rectangle (17,6);
+\draw [line width=0,black] (17,5) rectangle (18,6);
+\draw [line width=0,black] (18,5) rectangle (19,6);
+\draw [black, fill = black] (19,5) rectangle (20,6);
+\draw [line width=0,black] (20,5) rectangle (21,6);
+\draw [line width=0,black] (21,5) rectangle (22,6);
+\draw [black, fill = black] (22,5) rectangle (23,6);
+\draw [black, fill = black] (23,5) rectangle (24,6);
+\draw [black, fill = black] (24,5) rectangle (25,6);
+\draw [black, fill = black] (0,4) rectangle (1,5);
+\draw [line width=0,black] (1,4) rectangle (2,5);
+\draw [black, fill = black] (2,4) rectangle (3,5);
+\draw [black, fill = black] (3,4) rectangle (4,5);
+\draw [black, fill = black] (4,4) rectangle (5,5);
+\draw [line width=0,black] (5,4) rectangle (6,5);
+\draw [black, fill = black] (6,4) rectangle (7,5);
+\draw [line width=0,black] (7,4) rectangle (8,5);
+\draw [black, fill = black] (8,4) rectangle (9,5);
+\draw [line width=0,black] (9,4) rectangle (10,5);
+\draw [line width=0,black] (10,4) rectangle (11,5);
+\draw [black, fill = black] (11,4) rectangle (12,5);
+\draw [line width=0,black] (12,4) rectangle (13,5);
+\draw [line width=0,black] (13,4) rectangle (14,5);
+\draw [line width=0,black] (14,4) rectangle (15,5);
+\draw [black, fill = black] (15,4) rectangle (16,5);
+\draw [black, fill = black] (16,4) rectangle (17,5);
+\draw [black, fill = black] (17,4) rectangle (18,5);
+\draw [black, fill = black] (18,4) rectangle (19,5);
+\draw [line width=0,black] (19,4) rectangle (20,5);
+\draw [line width=0,black] (20,4) rectangle (21,5);
+\draw [black, fill = black] (21,4) rectangle (22,5);
+\draw [line width=0,black] (22,4) rectangle (23,5);
+\draw [line width=0,black] (23,4) rectangle (24,5);
+\draw [line width=0,black] (24,4) rectangle (25,5);
+\draw [black, fill = black] (0,3) rectangle (1,4);
+\draw [line width=0,black] (1,3) rectangle (2,4);
+\draw [black, fill = black] (2,3) rectangle (3,4);
+\draw [black, fill = black] (3,3) rectangle (4,4);
+\draw [black, fill = black] (4,3) rectangle (5,4);
+\draw [line width=0,black] (5,3) rectangle (6,4);
+\draw [black, fill = black] (6,3) rectangle (7,4);
+\draw [line width=0,black] (7,3) rectangle (8,4);
+\draw [black, fill = black] (8,3) rectangle (9,4);
+\draw [black, fill = black] (9,3) rectangle (10,4);
+\draw [line width=0,black] (10,3) rectangle (11,4);
+\draw [line width=0,black] (11,3) rectangle (12,4);
+\draw [black, fill = black] (12,3) rectangle (13,4);
+\draw [black, fill = black] (13,3) rectangle (14,4);
+\draw [line width=0,black] (14,3) rectangle (15,4);
+\draw [black, fill = black] (15,3) rectangle (16,4);
+\draw [line width=0,black] (16,3) rectangle (17,4);
+\draw [line width=0,black] (17,3) rectangle (18,4);
+\draw [black, fill = black] (18,3) rectangle (19,4);
+\draw [black, fill = black] (19,3) rectangle (20,4);
+\draw [line width=0,black] (20,3) rectangle (21,4);
+\draw [line width=0,black] (21,3) rectangle (22,4);
+\draw [line width=0,black] (22,3) rectangle (23,4);
+\draw [line width=0,black] (23,3) rectangle (24,4);
+\draw [line width=0,black] (24,3) rectangle (25,4);
+\draw [black, fill = black] (0,2) rectangle (1,3);
+\draw [line width=0,black] (1,2) rectangle (2,3);
+\draw [black, fill = black] (2,2) rectangle (3,3);
+\draw [black, fill = black] (3,2) rectangle (4,3);
+\draw [black, fill = black] (4,2) rectangle (5,3);
+\draw [line width=0,black] (5,2) rectangle (6,3);
+\draw [black, fill = black] (6,2) rectangle (7,3);
+\draw [line width=0,black] (7,2) rectangle (8,3);
+\draw [black, fill = black] (8,2) rectangle (9,3);
+\draw [line width=0,black] (9,2) rectangle (10,3);
+\draw [line width=0,black] (10,2) rectangle (11,3);
+\draw [line width=0,black] (11,2) rectangle (12,3);
+\draw [line width=0,black] (12,2) rectangle (13,3);
+\draw [black, fill = black] (13,2) rectangle (14,3);
+\draw [black, fill = black] (14,2) rectangle (15,3);
+\draw [line width=0,black] (15,2) rectangle (16,3);
+\draw [black, fill = black] (16,2) rectangle (17,3);
+\draw [line width=0,black] (17,2) rectangle (18,3);
+\draw [line width=0,black] (18,2) rectangle (19,3);
+\draw [black, fill = black] (19,2) rectangle (20,3);
+\draw [black, fill = black] (20,2) rectangle (21,3);
+\draw [line width=0,black] (21,2) rectangle (22,3);
+\draw [line width=0,black] (22,2) rectangle (23,3);
+\draw [black, fill = black] (23,2) rectangle (24,3);
+\draw [line width=0,black] (24,2) rectangle (25,3);
+\draw [black, fill = black] (0,1) rectangle (1,2);
+\draw [line width=0,black] (1,1) rectangle (2,2);
+\draw [line width=0,black] (2,1) rectangle (3,2);
+\draw [line width=0,black] (3,1) rectangle (4,2);
+\draw [line width=0,black] (4,1) rectangle (5,2);
+\draw [line width=0,black] (5,1) rectangle (6,2);
+\draw [black, fill = black] (6,1) rectangle (7,2);
+\draw [line width=0,black] (7,1) rectangle (8,2);
+\draw [black, fill = black] (8,1) rectangle (9,2);
+\draw [line width=0,black] (9,1) rectangle (10,2);
+\draw [black, fill = black] (10,1) rectangle (11,2);
+\draw [line width=0,black] (11,1) rectangle (12,2);
+\draw [black, fill = black] (12,1) rectangle (13,2);
+\draw [black, fill = black] (13,1) rectangle (14,2);
+\draw [line width=0,black] (14,1) rectangle (15,2);
+\draw [black, fill = black] (15,1) rectangle (16,2);
+\draw [black, fill = black] (16,1) rectangle (17,2);
+\draw [black, fill = black] (17,1) rectangle (18,2);
+\draw [line width=0,black] (18,1) rectangle (19,2);
+\draw [line width=0,black] (19,1) rectangle (20,2);
+\draw [line width=0,black] (20,1) rectangle (21,2);
+\draw [line width=0,black] (21,1) rectangle (22,2);
+\draw [black, fill = black] (22,1) rectangle (23,2);
+\draw [black, fill = black] (23,1) rectangle (24,2);
+\draw [line width=0,black] (24,1) rectangle (25,2);
+\draw [black, fill = black] (0,0) rectangle (1,1);
+\draw [black, fill = black] (1,0) rectangle (2,1);
+\draw [black, fill = black] (2,0) rectangle (3,1);
+\draw [black, fill = black] (3,0) rectangle (4,1);
+\draw [black, fill = black] (4,0) rectangle (5,1);
+\draw [black, fill = black] (5,0) rectangle (6,1);
+\draw [black, fill = black] (6,0) rectangle (7,1);
+\draw [line width=0,black] (7,0) rectangle (8,1);
+\draw [black, fill = black] (8,0) rectangle (9,1);
+\draw [black, fill = black] (9,0) rectangle (10,1);
+\draw [black, fill = black] (10,0) rectangle (11,1);
+\draw [line width=0,black] (11,0) rectangle (12,1);
+\draw [black, fill = black] (12,0) rectangle (13,1);
+\draw [line width=0,black] (13,0) rectangle (14,1);
+\draw [black, fill = black] (14,0) rectangle (15,1);
+\draw [line width=0,black] (15,0) rectangle (16,1);
+\draw [line width=0,black] (16,0) rectangle (17,1);
+\draw [line width=0,black] (17,0) rectangle (18,1);
+\draw [line width=0,black] (18,0) rectangle (19,1);
+\draw [line width=0,black] (19,0) rectangle (20,1);
+\draw [line width=0,black] (20,0) rectangle (21,1);
+\draw [line width=0,black] (21,0) rectangle (22,1);
+\draw [line width=0,black] (22,0) rectangle (23,1);
+\draw [line width=0,black] (23,0) rectangle (24,1);
+\draw [line width=0,black] (24,0) rectangle (25,1);
+\end{tikzpicture}
+\end{center}
+\end{document}
